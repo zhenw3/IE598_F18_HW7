@@ -60,5 +60,5 @@ plt.xticks(rotation=90)
 plt.show()
 
 print("My name is Zhen Wang")
-print("My NetID is: {type your zhenw3 here}")
+print("My NetID is: zhenw3")
 print("I hereby certify that I have read the University policy on Academic Integrity and that I am not in violation.")
