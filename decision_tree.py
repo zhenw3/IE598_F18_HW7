@@ -51,6 +51,11 @@ importances = dt.feature_importances_
 sorted_index = np.argsort(importances)[::-1]
 x = range(len(importances))
 
+for f in range(X_train.shape[1]):
+    print("%2d) %-*s %f" % (f + 1, 30, 
+                            X.columns[sorted_index[f]], 
+                            importances[sorted_index[f]]))
+
 # Create tick labels 
 labels = np.array(feature_names)[sorted_index]
 plt.bar(x, importances[sorted_index], tick_label=labels)
